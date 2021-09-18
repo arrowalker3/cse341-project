@@ -69,7 +69,8 @@ const requestHandler = (req, res) => {
             const parsedBody = Buffer.concat(body).toString();
             const newUser = parsedBody.split('=')[1];
 
-            // Add newUser to list of users
+            // Add newUser to list of users and display in console
+            console.log('New user:',newUser);
             users.push(newUser);
 
             // Redirect
